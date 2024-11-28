@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Add Book</title>
+</head>
+<body>
+<h2>Add Book</h2>
+<form th:action="@{/save}" method="post">
+    <label for="id">ID:</label><br>
+    <input type="text" id="id" name="id"><br>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="autor">Author:</label><br>
+    <input type="text" id="autor" name="autor"><br>
+
+    <input type="submit" value="Add Book">
+</form>
+</body>
+</html>
